@@ -30,8 +30,8 @@ namespace PDV
         private void InitializeComponent()
         {
             this.PanelMenu = new System.Windows.Forms.Panel();
-            this.PanelTitle = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PanelTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -39,9 +39,10 @@ namespace PDV
             this.MenuFuncionarios = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuSair = new System.Windows.Forms.ToolStripMenuItem();
             this.PanelDesktop = new System.Windows.Forms.Panel();
+            this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PanelMenu.SuspendLayout();
-            this.PanelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PanelTitle.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.PanelDesktop.SuspendLayout();
             this.SuspendLayout();
@@ -56,16 +57,6 @@ namespace PDV
             this.PanelMenu.Size = new System.Drawing.Size(150, 658);
             this.PanelMenu.TabIndex = 1;
             // 
-            // PanelTitle
-            // 
-            this.PanelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(92)))), ((int)(((byte)(76)))));
-            this.PanelTitle.Controls.Add(this.lblTitle);
-            this.PanelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelTitle.Location = new System.Drawing.Point(150, 0);
-            this.PanelTitle.Name = "PanelTitle";
-            this.PanelTitle.Size = new System.Drawing.Size(800, 80);
-            this.PanelTitle.TabIndex = 2;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(92)))), ((int)(((byte)(76)))));
@@ -75,6 +66,16 @@ namespace PDV
             this.pictureBox1.Size = new System.Drawing.Size(150, 80);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // PanelTitle
+            // 
+            this.PanelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(92)))), ((int)(((byte)(76)))));
+            this.PanelTitle.Controls.Add(this.lblTitle);
+            this.PanelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelTitle.Location = new System.Drawing.Point(150, 0);
+            this.PanelTitle.Name = "PanelTitle";
+            this.PanelTitle.Size = new System.Drawing.Size(800, 80);
+            this.PanelTitle.TabIndex = 2;
             // 
             // lblTitle
             // 
@@ -112,7 +113,8 @@ namespace PDV
             // MenuCadastros
             // 
             this.MenuCadastros.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MenuFuncionarios});
+            this.MenuFuncionarios,
+            this.cargosToolStripMenuItem});
             this.MenuCadastros.Name = "MenuCadastros";
             this.MenuCadastros.Size = new System.Drawing.Size(80, 21);
             this.MenuCadastros.Text = "Cadastros";
@@ -120,7 +122,7 @@ namespace PDV
             // MenuFuncionarios
             // 
             this.MenuFuncionarios.Name = "MenuFuncionarios";
-            this.MenuFuncionarios.Size = new System.Drawing.Size(150, 22);
+            this.MenuFuncionarios.Size = new System.Drawing.Size(180, 22);
             this.MenuFuncionarios.Text = "Funcionários";
             this.MenuFuncionarios.Click += new System.EventHandler(this.MenuFuncionarios_Click);
             // 
@@ -141,6 +143,12 @@ namespace PDV
             this.PanelDesktop.Size = new System.Drawing.Size(800, 578);
             this.PanelDesktop.TabIndex = 5;
             // 
+            // cargosToolStripMenuItem
+            // 
+            this.cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
+            this.cargosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cargosToolStripMenuItem.Text = "Cargos";
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,9 +166,9 @@ namespace PDV
             this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
             this.PanelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelTitle.ResumeLayout(false);
             this.PanelTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.PanelDesktop.ResumeLayout(false);
@@ -181,6 +189,7 @@ namespace PDV
         private System.Windows.Forms.ToolStripMenuItem MenuFuncionarios;
         private System.Windows.Forms.ToolStripMenuItem MenuSair;
         private System.Windows.Forms.Panel PanelDesktop;
+        private System.Windows.Forms.ToolStripMenuItem cargosToolStripMenuItem;
     }
 }
 

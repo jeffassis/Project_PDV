@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PDV.br.com.pdv.view;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,8 @@ namespace PDV
         public FrmMenuPrincipal()
         {
             InitializeComponent();
+            FrmLogin login = new FrmLogin(this);
+            login.ShowDialog();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

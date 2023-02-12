@@ -104,7 +104,7 @@ namespace PDV
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(165, 204);
+            this.label4.Location = new System.Drawing.Point(193, 199);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 15);
@@ -171,7 +171,7 @@ namespace PDV
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(168, 223);
+            this.txtCpf.Location = new System.Drawing.Point(196, 218);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(157, 22);
             this.txtCpf.TabIndex = 16;
