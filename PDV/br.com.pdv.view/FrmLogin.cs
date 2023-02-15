@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PDV.br.com.pdv.dao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,6 +70,22 @@ namespace PDV.br.com.pdv.view
                 MessageBox.Show("Senha não pode ser vazia!", "Campo vazio...", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtSenha.Focus();
                 return;
+            }
+            UsuarioDAO dao = new UsuarioDAO();
+            DataTable dt = dao.EfetuarLogin(user, senha);
+            if (dt.Rows.Count == 1)
+            {
+                _form.lblNivelAcesso.Text = dt.Rows[0].ItemArray[4].ToString();
+                _form.lblNomeUsuario.Text = dt.Rows[0].Field<string>("nome");
+
+                Program.nivel = int.Parse(dt.Rows[0].Field<Int32>("nivel").ToString());
+                Program.nomeUsuario = dt.Rows[0].Field<string>("nome");
+                Program.logado = true;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Usuário não encontrado!", "Tente novamente!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

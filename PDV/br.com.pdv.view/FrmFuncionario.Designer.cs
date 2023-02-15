@@ -159,7 +159,7 @@ namespace PDV
             this.Grid.Location = new System.Drawing.Point(15, 77);
             this.Grid.Margin = new System.Windows.Forms.Padding(4);
             this.Grid.Name = "Grid";
-            this.Grid.Size = new System.Drawing.Size(759, 315);
+            this.Grid.Size = new System.Drawing.Size(726, 315);
             this.Grid.TabIndex = 10;
             // 
             // txtTelefone
@@ -251,10 +251,10 @@ namespace PDV
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 80);
+            this.tabControl1.Location = new System.Drawing.Point(12, 25);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(795, 435);
+            this.tabControl1.Size = new System.Drawing.Size(760, 435);
             this.tabControl1.TabIndex = 17;
             // 
             // tabPage1
@@ -265,7 +265,7 @@ namespace PDV
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(787, 406);
+            this.tabPage1.Size = new System.Drawing.Size(752, 406);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Consultar";
             // 
@@ -298,7 +298,7 @@ namespace PDV
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.ClientSize = new System.Drawing.Size(818, 527);
+            this.ClientSize = new System.Drawing.Size(784, 475);
             this.Controls.Add(this.tabControl1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

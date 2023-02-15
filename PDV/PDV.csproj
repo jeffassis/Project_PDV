@@ -54,8 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="br.com.pdv.connect\ConnectionFactory.cs" />
+    <Compile Include="br.com.pdv.dao\CargoDAO.cs" />
     <Compile Include="br.com.pdv.dao\FuncionarioDAO.cs" />
+    <Compile Include="br.com.pdv.dao\UsuarioDAO.cs" />
+    <Compile Include="br.com.pdv.model\Cargo.cs" />
     <Compile Include="br.com.pdv.model\Funcionario.cs" />
+    <Compile Include="br.com.pdv.model\Usuario.cs" />
     <Compile Include="br.com.pdv.view\FrmFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\senha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_home_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

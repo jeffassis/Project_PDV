@@ -31,6 +31,7 @@ namespace PDV.br.com.pdv.view
         {
             this.components = new System.ComponentModel.Container();
             this.PanelTitle = new System.Windows.Forms.Panel();
+            this.BtnFechar = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
@@ -39,7 +40,6 @@ namespace PDV.br.com.pdv.view
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnEntrar = new System.Windows.Forms.Button();
-            this.BtnFechar = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.PanelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +56,21 @@ namespace PDV.br.com.pdv.view
             this.PanelTitle.Size = new System.Drawing.Size(498, 70);
             this.PanelTitle.TabIndex = 3;
             this.PanelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelTitle_MouseDown);
+            // 
+            // BtnFechar
+            // 
+            this.BtnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnFechar.FlatAppearance.BorderSize = 0;
+            this.BtnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFechar.Image = global::PDV.Properties.Resources.btn_cancelar_24;
+            this.BtnFechar.Location = new System.Drawing.Point(460, 4);
+            this.BtnFechar.Name = "BtnFechar";
+            this.BtnFechar.Size = new System.Drawing.Size(28, 28);
+            this.BtnFechar.TabIndex = 1;
+            this.BtnFechar.TabStop = false;
+            this.toolTip1.SetToolTip(this.BtnFechar, "Fechar o sistema");
+            this.BtnFechar.UseVisualStyleBackColor = true;
+            this.BtnFechar.Click += new System.EventHandler(this.BtnFechar_Click);
             // 
             // lblTitle
             // 
@@ -140,23 +155,9 @@ namespace PDV.br.com.pdv.view
             this.BtnEntrar.UseVisualStyleBackColor = false;
             this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
             // 
-            // BtnFechar
-            // 
-            this.BtnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnFechar.FlatAppearance.BorderSize = 0;
-            this.BtnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFechar.Image = global::PDV.Properties.Resources.btn_cancelar_24;
-            this.BtnFechar.Location = new System.Drawing.Point(460, 4);
-            this.BtnFechar.Name = "BtnFechar";
-            this.BtnFechar.Size = new System.Drawing.Size(28, 28);
-            this.BtnFechar.TabIndex = 1;
-            this.BtnFechar.TabStop = false;
-            this.toolTip1.SetToolTip(this.BtnFechar, "Fechar o sistema");
-            this.BtnFechar.UseVisualStyleBackColor = true;
-            this.BtnFechar.Click += new System.EventHandler(this.BtnFechar_Click);
-            // 
             // FrmLogin
             // 
+            this.AcceptButton = this.BtnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));

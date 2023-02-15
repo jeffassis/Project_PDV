@@ -93,6 +93,16 @@ namespace PDV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_home_32 {
+            get {
+                object obj = ResourceManager.GetObject("btn_home_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_novo_24 {
             get {
                 object obj = ResourceManager.GetObject("btn_novo_24", resourceCulture);
