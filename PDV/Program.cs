@@ -8,6 +8,11 @@ namespace PDV
 {
     static class Program
     {
+        // Variavel global usuario
+        public static string nomeUsuario;
+        public static int nivel;
+        public static Boolean logado = false;
+
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
